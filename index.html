@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <nav>
       <h2>Portfolio</h2>
       <ul>
-        <li class="nav-item">Home</li>
-        <li class="nav-item">Portfolio</li>
-        <li class="nav-item">About me</li>
-        <li class="nav-item">Testimonials</li>
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#home"></a>Portfolio</a></li>
+        <li class="nav-item"><a href="#about"></a>About me</a></li>
+        <li class="nav-item"><a href="#home"></a>Testimonials</a></li>
       </ul>
       <button href="#contact-form">Contact Me</button>
     </nav>
 
-    <div>
+    <div class="landing">
+        <div class="welcome">
       <p>Hey, I am John</p>
       <h1>
-        I create product design <br />
+        I create <span style="color: blueviolet;">product design</span> <br />
         and web development
       </h1>
       <p>
@@ -29,14 +31,16 @@
         expedita consectetur eum incidunt quia.
       </p>
       <button>Get In Touch</button>
+    </div>
       <div class="background">
         <img src="img/ja.jpg" alt="ja" />
       </div>
     </div>
 
-    <div>
+    <div class="skills">
       <h2>My Skills</h2>
-      <h1>My Expertice</h1>
+      <h1 id="expertise-title">My Expertice</h1>
+      <div class="cards">
       <div class="card">
         <h3>Strategy</h3>
         <p>
@@ -65,6 +69,7 @@
         </p>
       </div>
     </div>
+    </div>
 
     <div class="main-content">
       <img src="about-me.jpeg" alt="My photo" class="my-photo" />
@@ -83,6 +88,21 @@
           including versions of Lorem Ipsum.
         </p>
       </div>
+    <div id="about">
+      <p>About</p>
+      <h1>About Me</h1>
+      <img src="about-me.jpeg" alt="My photo" />
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
     </div>
     <div>
       <p>Recent Projects</p>
@@ -132,5 +152,29 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+    <div class="form-container">
+      <h1>Get in touch</h1>
+      <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+
+
+
+  
   </body>
 </html>
