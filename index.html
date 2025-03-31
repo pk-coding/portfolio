@@ -66,28 +66,34 @@
       </div>
     </div>
 
-    <div>
-      <p>About</p>
-      <h1>About Me</h1>
-      <img src="about-me.jpeg" alt="My photo" />
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+    <div class="main-content">
+      <img src="about-me.jpeg" alt="My photo" class="my-photo" />
+      <div class="content-aboutme">
+        <p>About</p>
+        <h1>About Me</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
     </div>
     <div>
       <p>Recent Projects</p>
       <h1>My Portfolio</h1>
-      <div>
-        <div>
-          <img src="project-1.jpeg" alt="Ikona pierwszego projektu" />
+      <div class="main-content">
+        <div class="content-portfolio">
+        <img
+          src="project-1.jpeg"
+          alt="Ikona pierwszego projektu"
+          class="project-icon"
+        />
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
@@ -97,8 +103,12 @@
             >Zobacz projekt</a
           >
         </div>
-        <div>
-          <img src="project-2.jpeg" alt="Ikona drugiego projektu" />
+        <div class="content-portfolio">
+          <img
+            src="project-2.jpeg"
+            alt="Ikona drugiego projektu"
+            class="project-icon"
+          />
           <p>
             The point of using Lorem Ipsum is that it has a more-or-less normal
             distribution of letters, as opposed to using 'Content here, content
@@ -109,7 +119,7 @@
             >Zobacz projekt</a
           >
         </div>
-        <div>
+        <div class="content-portfolio">
           <img src="project-3.jpeg" alt="Ikona trzeciego projektu" />
           <p>
             Various versions have evolved over the years, sometimes by accident,
