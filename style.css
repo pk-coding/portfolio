@@ -26,7 +26,7 @@
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #about .content-aboutme {
@@ -59,7 +59,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .portfolio-item {
@@ -83,6 +82,25 @@
   padding: 10px;
   border-radius: 5%;
 }
+
+.my-photo:hover {
+  transform: scaleX(1.02);
+  box-shadow: 0 10px 30px rgb(184, 250, 244);
+  transition-delay:0.1s;
+}
+
+.content-aboutme h1:hover {
+  transform: scaleX(1.02);
+  color: blueviolet;
+  transition-delay:0.1s;
+}
+
+.content-aboutme p:hover {
+  transform: scaleX(1.02);
+  color: blueviolet;
+  transition-delay:0.1s;
+}
+
 body {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -100,7 +118,6 @@ nav {
   color: blueviolet;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    
 }
 
 #progress {
@@ -111,14 +128,16 @@ nav {
   left: 0;
   transform-origin: left center;
   width: 100%;
-  z-index:9;
-  
+  z-index: 9;
+
   animation: progress linear;
   animation-timeline: scroll();
 }
 
 @keyframes progress {
-  from { transform: scaleX(0); }
+  from {
+    transform: scaleX(0);
+  }
 }
 
 nav ul {
@@ -159,7 +178,7 @@ nav button {
   font-size: 1.2rem;
 }
 
-nav button:hover{
+nav button:hover {
   background-color: blueviolet;
   color: white;
   transition: 0.5s;
@@ -184,12 +203,12 @@ nav button:hover{
   align-items: center;
 }
 
-.background img{
-    margin-right: 50px;
-    float: right;
-    width: 90%;
-    border-radius: 10%;
-    box-shadow: 5px 5px 15px rgb(91, 80, 80);
+.background img {
+  margin-right: 50px;
+  float: right;
+  width: 90%;
+  border-radius: 10%;
+  box-shadow: 5px 5px 15px rgb(91, 80, 80);
 }
 
 .landing button {
@@ -212,17 +231,17 @@ nav button:hover{
   flex-direction: row;
   justify-content: space-around;
 }
-.card{
-    margin: 20px;
-    padding: 20px;
-    background-color: rgba(236, 255, 253, 1);
-    border-radius: 10px;
-    text-align: justify;
-    text-justify: inter-word;
+.card {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(236, 255, 253, 1);
+  border-radius: 10px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .animate {
-    animation: letter-replace 30s forwards;
+  animation: letter-replace 30s forwards;
 }
 
 .form-container {
@@ -285,16 +304,16 @@ textarea {
 
 @media (max-width: 1500px) {
   nav h2::after {
-  display: none;
-  content: " ";
-  width: 5px;
-  height: 5px;
-  background-color: blueviolet;
-  position: absolute;
-  top: 20px;
-  left: 260px;
-}}
-
+    display: none;
+    content: " ";
+    width: 5px;
+    height: 5px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 20px;
+    left: 260px;
+  }
+}
 
 @media (max-width: 991px) {
   .landing {
@@ -303,54 +322,51 @@ textarea {
     height: auto;
     text-align: center;
   }
-  
+
   .landing button {
     width: 50%;
   }
-  
+
   .landing .welcome {
     order: 2;
     margin-top: 20px;
   }
-  
+
   .landing .background {
     order: 1;
     width: 100%;
     margin-right: 0;
   }
-  
+
   .landing .background img {
     width: 100%;
     margin-right: 0;
     border-radius: 10px;
   }
-  
+
   .skills {
     height: auto;
     padding: 20px;
   }
-  
+
   .cards {
     flex-direction: column;
   }
-  
+
   .card {
     margin: 10px 0;
   }
 
-  .content-portfolio{
+  .content-portfolio {
     display: flex;
     flex-direction: column;
     max-width: 990px;
   }
 
-  .main-content-aboutme{
+  .main-content-aboutme {
     display: flex;
     flex-direction: column;
-
   }
-
-
 }
 /*Menu Hamburger */
 @media (max-width: 991px) {
@@ -368,11 +384,11 @@ textarea {
   }
 
   nav ul.show {
-    display: flex; 
+    display: flex;
   }
 
   .hamburger {
-    display: block; 
+    display: block;
     cursor: pointer;
     padding: 10px;
     color: blueviolet;
@@ -382,9 +398,9 @@ textarea {
 
   nav h2 {
     margin: 0;
-    flex: 1; 
+    flex: 1;
   }
-  nav button{
+  nav button {
     display: none;
   }
 }
