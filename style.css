@@ -192,7 +192,7 @@ nav button:hover{
 }
 
 .animate {
-  animation: letter-replace 30s forwards;
+    animation: letter-replace 30s forwards;
 }
 
 .form-container {
@@ -248,28 +248,57 @@ textarea {
 
 
 
-@media (width >= 1920px){
+@media (max-width: 991px) {
+  .landing {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
 
-}
+  .landing button {
+    width: 50%;
+  }
+  
+  .landing .welcome {
+    order: 2;
+    margin-top: 20px;
+  }
+  
+  .landing .background {
+    order: 1;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .landing .background img {
+    width: 100%;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+  
+  .skills {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .cards {
+    flex-direction: column;
+  }
+  
+  .card {
+    margin: 10px 0;
+  }
 
-@media ( 1200 <= width <= 1919px) {
-  
-}
+  .content-portfolio{
+    display: flex;
+    flex-direction: column;
+    max-width: 990px;
+  }
 
-@media ( 992 <= width <= 1199px){
-  
-}
-
-@media ( 768 <= width <= 991px){
-  
-}
-@media ( 481 <= width <= 767px){
-  
-}
-@media ( width <= 480px){
-  .landing{
-    display: block;
-    width:100vw;
+  .main-content-aboutme{
+    display: flex;
+    flex-direction: column;
 
   }
 }

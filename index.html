@@ -33,7 +33,12 @@
       <button>Get In Touch</button>
     </div>
       <div class="background">
-        <img src="img/ja.jpg" alt="ja" />
+        <img 
+        srcset="img/ja.jpg 500w, img/ja.jpg 800w"
+        sizes="(max-width: 600px) 480px,
+         800px"
+        src="img/ja.jpg" 
+        alt="ja" />
       </div>
     </div>
 
@@ -160,10 +165,10 @@
 
   <div class="form-container">
     <h1>Complete the information:</h1>
-    <form>
+    
         <label for="consent">Select consent to data processing:
           <br />
-        <input type="radio" id="consent" name="consent" value="" required>I consent to the processing of data</input>
+        <input type="radio" id="consent" name="consent" value="">I consent to the processing of data</input>
       </label>
       <br />
         <label>Select country:</label>
@@ -181,7 +186,7 @@
         <textarea id="hobby" name="hobby" rows="4" placeholder="Write something about yourself. What you like, what is important to you" required></textarea>
 
         <button type="submit">Submit</button>
-    </form>
+   
 </div>
 
   <script>
