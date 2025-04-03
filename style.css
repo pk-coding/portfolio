@@ -1,27 +1,15 @@
 .main-content-aboutme {
   display: flex;
   flex-direction: row;
-<<<<<<< Updated upstream
   justify-content: space-around;
   padding: 50px;
-=======
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
->>>>>>> Stashed changes
   width: 90%;
-  min-height: 80vh;
-  margin: 0 auto;
 }
 
 .content-aboutme {
-<<<<<<< Updated upstream
   justify-content: space-around;
   padding: 50px;
-=======
->>>>>>> Stashed changes
   flex: 1;
-  padding: 0 40px;
 }
 
 #about {
@@ -68,13 +56,8 @@
 
 .content-portfolio {
   display: flex;
-<<<<<<< Updated upstream
   flex-direction: row;
   justify-content: space-around;
-=======
-  flex-direction: column;
-  justify-content: space-between;
->>>>>>> Stashed changes
   align-items: center;
 
 }
@@ -96,7 +79,6 @@
 }
 
 .my-photo {
-<<<<<<< Updated upstream
   flex: 1;
   padding: 10px;
   border-radius: 5%;
@@ -109,24 +91,8 @@ body {
 }
 nav {
   position: sticky;
-=======
-  width: 40%;
-  max-height: 500px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-right: 40px;
-}
-body {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
-}
-nav {
-  position: sticky;
-  top: 0px;
+  top: 0;
   background-color: white;
->>>>>>> Stashed changes
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -188,20 +154,12 @@ nav button:hover{
   align-items: center;
 }
 
-<<<<<<< Updated upstream
-.background img {
-  margin-right: 50px;
-  float: right;
-  width: 90%;
-  border-radius: 10%;
-=======
 .background img{
     margin-right: 50px;
     float: right;
     width: 90%;
     border-radius: 10%;
     box-shadow: 5px 5px 15px rgb(91, 80, 80);
->>>>>>> Stashed changes
 }
 
 .landing button {
@@ -224,13 +182,6 @@ nav button:hover{
   flex-direction: row;
   justify-content: space-around;
 }
-<<<<<<< Updated upstream
-.card {
-  margin: 20px;
-  padding: 20px;
-  background-color: rgba(236, 255, 253, 1);
-  border-radius: 10px;
-=======
 .card{
     margin: 20px;
     padding: 20px;
@@ -238,7 +189,6 @@ nav button:hover{
     border-radius: 10px;
     text-align: justify;
     text-justify: inter-word;
->>>>>>> Stashed changes
 }
 
 .animate {
