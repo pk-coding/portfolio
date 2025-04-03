@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="card-animation.css" />
 
-  </head>
-  <body>
-    <nav>
-      <h2>Portfolio</h2>
-      <ul>
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#home"></a>Portfolio</a></li>
-        <li class="nav-item"><a href="#main-content"></a>About me</a></li>
-        <li class="nav-item"><a href="#home"></a>Testimonials</a></li>
-      </ul>
-      <button href="#contact-form">Contact Me</button>
-      <div id="progress" role="progressbar" aria-label="progress"></div>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="card-animation.css" />
 
-    <div class="landing">
-        <div class="welcome">
+</head>
+
+<body>
+  <nav>
+    <h2>Portfolio</h2>
+    <ul>
+      <li class="nav-item"><a href="#home">Home</a></li>
+      <li class="nav-item"><a href="#home"></a>Portfolio</a></li>
+      <li class="nav-item"><a href="#main-content"></a>About me</a></li>
+      <li class="nav-item"><a href="#home"></a>Testimonials</a></li>
+    </ul>
+    <button href="#contact-form">Contact Me</button>
+    <div id="progress" role="progressbar" aria-label="progress"></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="landing">
+    <div class="welcome">
       <p>Hey, I am John</p>
       <h1>
         I create <span style="color: blueviolet;">product design</span> <br />
@@ -35,20 +37,16 @@
       </p>
       <button>Get In Touch</button>
     </div>
-      <div class="background">
-        <img 
-        srcset="img/ja.jpg 500w, img/ja.jpg 800w"
-        sizes="(max-width: 600px) 480px,
-         800px"
-        src="img/ja.jpg" 
-        alt="ja" />
-      </div>
+    <div class="background">
+      <img srcset="img/ja.jpg 500w, img/ja.jpg 800w" sizes="(max-width: 600px) 480px,
+         800px" src="img/ja.jpg" alt="ja" />
     </div>
+  </div>
 
-    <div class="skills">
-      <h2>My Skills</h2>
-      <h1 id="expertise-title">My Expertice</h1>
-      <div class="cards">
+  <div class="skills">
+    <h2>My Skills</h2>
+    <h1 id="expertise-title">My Expertice</h1>
+    <div class="cards">
       <div class="card anime">
         <h3>Strategy</h3>
         <p>
@@ -77,130 +75,209 @@
         </p>
       </div>
     </div>
-    </div>
+  </div>
 
-    <div class="main-content-aboutme">
-      <img src="about-me.jpeg" alt="My photo" class="my-photo" />
-      <div class="content-aboutme">
-        <p>About</p>
-        <h1>About Me</h1>
+  <div class="main-content-aboutme">
+    <img src="./img/about-me.jpeg" alt="My photo" class="my-photo" />
+    <div class="content-aboutme">
+      <p>About</p>
+      <h1>About Me</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only
+        five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and
+        more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum.
+      </p>
+    </div>
+  </div>
+  <div class="main-content-portfolio">
+    <div>
+      <p>Recent Projects</p>
+      <h1>My Portfolio</h1>
+    </div>
+    <div class="content-portfolio">
+      <div class="portfolio-item">
+        <img src="./img/project-1.jpeg" alt="Project logo." class="project-icon" />
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
         </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fef%2FFr%25C3%25BChlingsallee_Tulpenbl%25C3%25BCte_2010_%25281%2529.jpg%2F1200px-Fr%25C3%25BChlingsallee_Tulpenbl%25C3%25BCte_2010_%25281%2529.jpg&imgrefurl=https%3A%2F%2Fpl.wikipedia.org%2Fwiki%2FWiosna&docid=AoUQO5Cx_pd9mM&tbnid=Qp4-DzZIkrXZbM&vet=12ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oECBUQAA..i&w=1200&h=851&hcb=2&ved=2ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oECBUQAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-2.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          The point of using Lorem Ipsum is that it has a more-or-less normal
+          distribution of letterse, content here'.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fwww.ogrod2001.pl%2Fwp-content%2Fuploads%2F2022%2F03%2Fmagnolia-trees-g9ab79a1b8_1280.jpg&imgrefurl=https%3A%2F%2Fwww.ogrod2001.pl%2Fwiosna-w-ogrodzie-najwazniejsze-prace-do-wykonania%2F&docid=2Pcfdw2_1I4fsM&tbnid=cTlzKVd7u1LvOM&vet=12ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oFCIEBEAA..i&w=1280&h=853&hcb=2&ved=2ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oFCIEBEAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-3.jpeg" alt="Project logo." />
+        <p>
+          Various versions have evolved over the years, sometimes by accident,
+          sometimes on purpose (injected humour and the like).
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fcdn.podroze.smcloud.net%2Ft%2Fimage%2Ft%2F130302%2Fwiosna_330325.jpg&imgrefurl=https%3A%2F%2Fm.podroze.se.pl%2Fswiat%2Fciekawostki-ze-swiata%2Fwiosna-2022-kiedy-jest-pierwszy-dzien-astronomicznej-i-kalendarzowej-wiosny-jakie-sa-wiosenne-zwycza%2F7641%2F&docid=sFR1Pk6gklQYnM&tbnid=fUsiHlFHDXgCaM&vet=12ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oECFYQAA..i&w=700&h=466&hcb=2&ved=2ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oECFYQAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-4.jpeg" alt="Project logoo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fwww.akropolis.edu.pl%2Fimages%2F004_Czytelnia%2F003_Przemyslenia%2Fwiosna.jpg&imgrefurl=https%3A%2F%2Fwww.akropolis.edu.pl%2Fczytelnia%2Fprzemyslenia%2F1538-wiosna-symbol-odnowienia&docid=-ifNIL7FQFHIkM&tbnid=QwYBsRU8tvPgeM&vet=12ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECFgQAA..i&w=640&h=426&hcb=2&ved=2ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECFgQAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-5.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fmodanazdrowie.pl%2Fwp-content%2Fuploads%2F2023%2F01%2Fwiosna.jpg&imgrefurl=https%3A%2F%2Fmodanazdrowie.pl%2Fto-tylko-wiosna%2F&docid=n19pVbnHcSQ_6M&tbnid=JYxzqRreQJINaM&vet=12ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECBsQAA..i&w=1050&h=700&hcb=2&ved=2ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECBsQAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-6.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fimg.freepik.com%2Fdarmowe-zdjecie%2Fdrzewa-kwitnace-wiosna-piekne-kwiaty-wisni_335224-878.jpg&imgrefurl=https%3A%2F%2Fpl.freepik.com%2Fdarmowe-zdjecie-wektory%2Fwiosna-krajobraz&docid=VH7EcWeHZ1uR0M&tbnid=EQMJUSp0P8gM7M&vet=12ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECG8QAA..i&w=626&h=417&hcb=2&ved=2ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECG8QAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-7.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fstatic.ddbelchatow.pl%2Ftulodz%2Farticles%2Fimage%2Fcec6f0f3-46ca-43bd-b95a-6a8f8cb37b4c&imgrefurl=https%3A%2F%2Ftulodz.pl%2Fmaterialy-partnerskie%2Fjaka-bedzie-tegoroczna-wiosna-wiadomo-na-co-trzeba-sie-przygotowac%2FdFRTvA6WaQc6R7VGn1Rj&docid=uZ983XSATEj8iM&tbnid=9oDz6pYtKeq7rM&vet=12ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECGsQAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECGsQAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-8.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a href="">Zobacz projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-9.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fimg.shmbk.pl%2Frimgsph%2F1102383_ca728583-6db9-4ddd-a4eb-a626c9487c04_crop_1280_768_zdjecie.jpg&imgrefurl=https%3A%2F%2Fwww.homebook.pl%2Fartykuly%2F6972%2Fwiosna-w-ogrodzie-jakie-wykonac-prace-i-jakie-kwiaty-posadzic&docid=dW-m8hnxNfb-mM&tbnid=n3iITNVWtxl0eM&vet=12ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECHoQAA..i&w=1280&h=768&hcb=2&ved=2ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECHoQAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-10.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fcms-v1-files.idcom-jst.pl%2Fsites%2F951%2Fwiadomosci%2F190778%2Ffotos%2Forign%2Fprzylaszcka3.jpg&imgrefurl=https%3A%2F%2Fszydlowiecpowiat.pl%2Fwiadomosci%2F1%2Fwiadomosc%2F190778%2Fprzyroda_wiosna&docid=EVTWczZBOGLIBM&tbnid=DUnOP8c1Y8lmiM&vet=12ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECEwQAA..i&w=800&h=533&hcb=2&ved=2ahUKEwjduLac4LyMAxUE1gIHHXsBMiUQM3oECEwQAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-11.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fi.iplsc.com%2F000EKIKOEPEU545F-C322-F4.webp&imgrefurl=https%3A%2F%2Fwydarzenia.interia.pl%2Fnauka%2Fnews-w-2100-roku-wiosna-moze-nadejsc-10-dni-wczesniej-najnowsze-u%2CnId%2C5840517&docid=H3DErp5Y_Ni4XM&tbnid=AILpEp4MapocBM&vet=12ahUKEwiZ1cTw47yMAxWyExAIHT_yNPI4ChAzegQIVBAA..i&w=1024&h=682&hcb=2&ved=2ahUKEwiZ1cTw47yMAxWyExAIHT_yNPI4ChAzegQIVBAA">Zobacz
+          projekt</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="./img/project-12.jpeg" alt="Project logo." class="project-icon" />
+        <p>
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </p>
+        <a
+          href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fcdn.galleries.smcloud.net%2Ft%2Fgalleries%2Fgf-cMaN-W2Ge-8nZq_cebulica-syberyjska-994x828.jpg&imgrefurl=https%3A%2F%2Fmuratordom.pl%2Fogrod%2Frosliny%2Fte-kwiaty-pojawiaja-sie-w-ogrodzie-jako-pierwsze-zobacz-jakie-rosliny-zakwitaja-najwczesniej-aa-bFhT-9b8b-koSc.html&docid=pcMPPfo8pA_1zM&tbnid=AoBGS1v4ks-M_M&vet=12ahUKEwiZ1cTw47yMAxWyExAIHT_yNPI4ChAzegQIdRAA..i&w=994&h=828&hcb=2&ved=2ahUKEwiZ1cTw47yMAxWyExAIHT_yNPI4ChAzegQIdRAA">Zobacz
+          projekt</a>
       </div>
     </div>
-    <div class="main-content-portfolio">
-        <div>
-          <p>Recent Projects</p>
-          <h1>My Portfolio</h1>
-        </div>
-        <div class="content-portfolio">
-        <div class="portfolio-item">
-        <img
-          src="project-1.jpeg"
-          alt="Ikona pierwszego projektu"
-          class="project-icon"
-        />
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </p>
-          <a
-            href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fef%2FFr%25C3%25BChlingsallee_Tulpenbl%25C3%25BCte_2010_%25281%2529.jpg%2F1200px-Fr%25C3%25BChlingsallee_Tulpenbl%25C3%25BCte_2010_%25281%2529.jpg&imgrefurl=https%3A%2F%2Fpl.wikipedia.org%2Fwiki%2FWiosna&docid=AoUQO5Cx_pd9mM&tbnid=Qp4-DzZIkrXZbM&vet=12ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oECBUQAA..i&w=1200&h=851&hcb=2&ved=2ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oECBUQAA"
-            >Zobacz projekt</a
-          >
-        </div>
-        <div class="portfolio-item">
-          <img
-            src="project-2.jpeg"
-            alt="Ikona drugiego projektu"
-            class="project-icon"
-          />
-          <p>
-            The point of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here'.
-          </p>
-          <a
-            href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fwww.ogrod2001.pl%2Fwp-content%2Fuploads%2F2022%2F03%2Fmagnolia-trees-g9ab79a1b8_1280.jpg&imgrefurl=https%3A%2F%2Fwww.ogrod2001.pl%2Fwiosna-w-ogrodzie-najwazniejsze-prace-do-wykonania%2F&docid=2Pcfdw2_1I4fsM&tbnid=cTlzKVd7u1LvOM&vet=12ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oFCIEBEAA..i&w=1280&h=853&hcb=2&ved=2ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oFCIEBEAA"
-            >Zobacz projekt</a
-          >
-        </div>
-        <div class="portfolio-item">
-          <img src="project-3.jpeg" alt="Ikona trzeciego projektu" />
-          <p>
-            Various versions have evolved over the years, sometimes by accident,
-            sometimes on purpose (injected humour and the like).
-          </p>
-          <a
-            href="https://www.google.com/imgres?q=wiosna&imgurl=https%3A%2F%2Fcdn.podroze.smcloud.net%2Ft%2Fimage%2Ft%2F130302%2Fwiosna_330325.jpg&imgrefurl=https%3A%2F%2Fm.podroze.se.pl%2Fswiat%2Fciekawostki-ze-swiata%2Fwiosna-2022-kiedy-jest-pierwszy-dzien-astronomicznej-i-kalendarzowej-wiosny-jakie-sa-wiosenne-zwycza%2F7641%2F&docid=sFR1Pk6gklQYnM&tbnid=fUsiHlFHDXgCaM&vet=12ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oECFYQAA..i&w=700&h=466&hcb=2&ved=2ahUKEwjGjrPX1LSMAxWjDxAIHWn7HvQQM3oECFYQAA"
-            >Zobacz projekt</a
-          >
-        </div>
-      </div>
-    </div>
-    
-    <div class="form-container">
-      <h1>Get in touch</h1>
-      <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Name" tabindex="1">
+  </div>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="e-mail" tabindex="2">
+  <div class="form-container">
+    <h1>Get in touch</h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" tabindex="1">
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="message" tabindex="3" required></textarea>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="e-mail" tabindex="2">
 
-          <input type="checkbox" name="regulamin" id="regulamin">Regulamin</input>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="message" tabindex="3" required></textarea>
 
-          <button type="submit" onclick="submit()">Submit</button>
-      </form>
+      <input type="checkbox" name="regulamin" id="regulamin">Regulamin</input>
+
+      <button type="submit" onclick="submit()">Submit</button>
+    </form>
   </div>
 
   <div class="form-container">
     <h1>Complete the information:</h1>
-    
-        <label for="consent">Select consent to data processing:
-          <br />
-        <input type="radio" id="consent" name="consent" value="">I consent to the processing of data</input>
-      </label>
+
+    <label for="consent">Select consent to data processing:
       <br />
-        <label>Select country:</label>
-        <label>
-          <input type="radio" name="country" value="polish"> Polish
-        </label>
-        <label>
-          <input type="radio" name="country" value="italy"> Italy
-        </label>
-        <label>
-          <input type="radio" name="country" value="spain"> Spain
-        </label>
-        <br/>
-        <label for="hobby">Message</label>
-        <textarea id="hobby" name="hobby" rows="4" placeholder="Write something about yourself. What you like, what is important to you" required></textarea>
+      <input type="radio" id="consent" name="consent" value="">I consent to the processing of data</input>
+    </label>
+    <br />
+    <label>Select country:</label>
+    <label>
+      <input type="radio" name="country" value="polish"> Polish
+    </label>
+    <label>
+      <input type="radio" name="country" value="italy"> Italy
+    </label>
+    <label>
+      <input type="radio" name="country" value="spain"> Spain
+    </label>
+    <br />
+    <label for="hobby">Message</label>
+    <textarea id="hobby" name="hobby" rows="4"
+      placeholder="Write something about yourself. What you like, what is important to you" required></textarea>
 
-        <button type="submit">Submit</button>
-   
-</div>
+    <button type="submit">Submit</button>
 
-<ul id="days-of-week">Days of week:
-  <li>Monday</li>
-  <li>Tuesday</li>
-  <li>Wednesday</li>
-  <li>Thursday</li>
-  <li>Friday</li>
-  <li>Saturday</li>
-  <li>Sunday</li>
-</ul>
+  </div>
+  <div class="calendar">
+    <h1>Calendar:</h1>
+    <ul id="days-of-week"><strong>Days of week:</strong>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+      <li>Saturday</li>
+      <li>Sunday</li>
+    </ul>
+  </div>
 
   <script>
     const form = document.querySelector('form');
@@ -210,12 +287,13 @@
     });
 
     function toggleMenu() {
-            const menu = document.querySelector('nav ul');
-            menu.classList.toggle('show'); 
-        }
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('show');
+    }
 
-     
-   
+
+
   </script>
-  </body>
+</body>
+
 </html>

@@ -12,38 +12,28 @@
   flex: 1;
 }
 
-#about {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 60px;
-  margin: 40px auto;
-  max-width: 1200px;
-}
-
-#about .my-photo {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#about .content-aboutme {
+.my-photo {
   flex: 1;
+  padding: 10px;
+  border-radius: 5%;
 }
 
-#about h1 {
-  margin-bottom: 20px;
+.my-photo:hover {
+  transform: scaleX(1.02);
+  box-shadow: 0 10px 30px rgb(184, 250, 244);
+  transition-delay: 0.1s;
+}
+
+.content-aboutme h1:hover {
+  transform: scaleX(1.02);
   color: blueviolet;
-  font-size: 2rem;
+  transition-delay: 0.1s;
 }
 
-#about p {
-  line-height: 1.6;
-  text-align: justify;
-  font-size: 1.1rem;
-  color: #333;
+.content-aboutme p:hover {
+  transform: scaleX(1.02);
+  color: blueviolet;
+  transition-delay: 0.1s;
 }
 
 .main-content-portfolio {
@@ -57,6 +47,7 @@
 .content-portfolio {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -64,6 +55,7 @@
 .portfolio-item {
   display: flex;
   flex-direction: column;
+  flex: 1 1 33%;
   justify-content: space-around;
   align-items: center;
 }
@@ -72,33 +64,15 @@
   padding: 10px;
 }
 
+.portfolio-item img {
+  width: 255px;
+  height: 183px;
+  border-radius: 20px;
+}
+
 .project-icon {
   display: block;
   padding: 10px;
-}
-
-.my-photo {
-  flex: 1;
-  padding: 10px;
-  border-radius: 5%;
-}
-
-.my-photo:hover {
-  transform: scaleX(1.02);
-  box-shadow: 0 10px 30px rgb(184, 250, 244);
-  transition-delay:0.1s;
-}
-
-.content-aboutme h1:hover {
-  transform: scaleX(1.02);
-  color: blueviolet;
-  transition-delay:0.1s;
-}
-
-.content-aboutme p:hover {
-  transform: scaleX(1.02);
-  color: blueviolet;
-  transition-delay:0.1s;
 }
 
 body {
@@ -294,8 +268,22 @@ textarea {
   background-color: rgb(85, 2, 162);
 }
 
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #days-of-week {
   list-style: none;
+  color: blueviolet;
+}
+
+#days-of-week li {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
 }
 
 #days-of-week li::before {
