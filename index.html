@@ -71,7 +71,7 @@
     </div>
     </div>
 
-    <div class="main-content">
+    <div class="main-content-aboutme">
       <img src="about-me.jpeg" alt="My photo" class="my-photo" />
       <div class="content-aboutme">
         <p>About</p>
@@ -89,12 +89,13 @@
         </p>
       </div>
     </div>
-    
-    <div>
-      <p>Recent Projects</p>
-      <h1>My Portfolio</h1>
-      <div class="main-content">
+    <div class="main-content-portfolio">
+        <div>
+          <p>Recent Projects</p>
+          <h1>My Portfolio</h1>
+        </div>
         <div class="content-portfolio">
+        <div class="portfolio-item">
         <img
           src="project-1.jpeg"
           alt="Ikona pierwszego projektu"
@@ -109,7 +110,7 @@
             >Zobacz projekt</a
           >
         </div>
-        <div class="content-portfolio">
+        <div class="portfolio-item">
           <img
             src="project-2.jpeg"
             alt="Ikona drugiego projektu"
@@ -125,7 +126,7 @@
             >Zobacz projekt</a
           >
         </div>
-        <div class="content-portfolio">
+        <div class="portfolio-item">
           <img src="project-3.jpeg" alt="Ikona trzeciego projektu" />
           <p>
             Various versions have evolved over the years, sometimes by accident,
@@ -155,7 +156,31 @@
       </form>
   </div>
 
+  <div class="form-container">
+    <h1>Complete the information:</h1>
+    <form>
+        <label for="consent">Select consent to data processing:
+          <br />
+        <input type="radio" id="consent" name="consent" value="" required>I consent to the processing of data</input>
+      </label>
+      <br />
+        <label>Select country:</label>
+        <label>
+          <input type="radio" name="country" value="polish"> Polish
+        </label>
+        <label>
+          <input type="radio" name="country" value="italy"> Italy
+        </label>
+        <label>
+          <input type="radio" name="country" value="spain"> Spain
+        </label>
+        <br/>
+        <label for="hobby">Message</label>
+        <textarea id="hobby" name="hobby" rows="4" placeholder="Write something about yourself. What you like, what is important to you" required></textarea>
 
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
   
   </body>

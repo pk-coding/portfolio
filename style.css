@@ -1,25 +1,41 @@
-.main-content {
+.main-content-aboutme {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: space-around;
+  padding: 50px;
   width: 90%;
 }
 
 .content-aboutme {
-  margin: 80px 20px 20px 0;
+  justify-content: space-around;
+  padding: 50px;
   flex: 1;
+}
+
+.main-content-portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+  width: 90%;
 }
 
 .content-portfolio {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
-.content-portfolio p {
-  margin: 0 40px 0 40px;
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portfolio-item p {
+  padding: 10px;
 }
 
 .project-icon {
@@ -30,14 +46,16 @@
 .my-photo {
   flex: 1;
   padding: 10px;
+  border-radius: 5%;
 }
 body {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 nav {
-    position: sticky;
+  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -45,7 +63,6 @@ nav {
   color: blueviolet;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    
 }
 
 nav ul {
@@ -75,8 +92,8 @@ nav button {
 }
 
 .landing {
-    font-size: 1.2rem;
-    height: 100vh;
+  font-size: 1.2rem;
+  height: 100vh;
   background-color: rgba(236, 255, 253, 1);
   background-image: linear-gradient(
     90deg,
@@ -93,42 +110,42 @@ nav button {
   align-items: center;
 }
 
-.background img{
-    margin-right: 50px;
-    float: right;
-    width: 90%;
-    border-radius: 10%;
+.background img {
+  margin-right: 50px;
+  float: right;
+  width: 90%;
+  border-radius: 10%;
 }
 
-.landing button{
-    background-color: blueviolet;
-    height: 40px;
-    border: none;
-    color: white;
-    border: 2px solid blueviolet;
-    border-radius: 10px;
-    padding: 10px;
+.landing button {
+  background-color: blueviolet;
+  height: 40px;
+  border: none;
+  color: white;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.skills{
-    height: 100vh;
-    padding: 50px;
-    font-size: 1.2rem;
+.skills {
+  height: 100vh;
+  padding: 50px;
+  font-size: 1.2rem;
 }
-.cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.card{
-    margin: 20px;
-    padding: 20px;
-    background-color: rgba(236, 255, 253, 1);
-    border-radius: 10px;
+.card {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(236, 255, 253, 1);
+  border-radius: 10px;
 }
 
 .animate {
-    animation: letter-replace 30s forwards;
+  animation: letter-replace 30s forwards;
 }
 
 .form-container {
