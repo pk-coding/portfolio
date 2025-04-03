@@ -13,7 +13,7 @@
       <ul>
         <li class="nav-item"><a href="#home">Home</a></li>
         <li class="nav-item"><a href="#home"></a>Portfolio</a></li>
-        <li class="nav-item"><a href="#about"></a>About me</a></li>
+        <li class="nav-item"><a href="#main-content"></a>About me</a></li>
         <li class="nav-item"><a href="#home"></a>Testimonials</a></li>
       </ul>
       <button href="#contact-form">Contact Me</button>
@@ -71,10 +71,13 @@
     </div>
     </div>
 
+<<<<<<< Updated upstream
     <div class="main-content-aboutme">
+=======
+    <div class="main-content" id="about">
+>>>>>>> Stashed changes
       <img src="about-me.jpeg" alt="My photo" class="my-photo" />
       <div class="content-aboutme">
-        <p>About</p>
         <h1>About Me</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -89,11 +92,20 @@
         </p>
       </div>
     </div>
+<<<<<<< Updated upstream
     <div class="main-content-portfolio">
         <div>
           <p>Recent Projects</p>
           <h1>My Portfolio</h1>
         </div>
+=======
+    
+    <div>
+     
+      <div class="main-content">
+        <div><h1>My Portfolio</h1>
+        <p>Recent Projects</p></div>
+>>>>>>> Stashed changes
         <div class="content-portfolio">
         <div class="portfolio-item">
         <img
@@ -144,15 +156,17 @@
       <h1>Get in touch</h1>
       <form>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" placeholder="Name" tabindex="1">
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" placeholder="e-mail" tabindex="2">
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+          <textarea id="message" name="message" rows="4" placeholder="message" tabindex="3" required></textarea>
 
-          <button type="submit">Submit</button>
+          <input type="checkbox" name="regulamin" id="regulamin">Regulamin</input>
+
+          <button type="submit" onclick="submit()">Submit</button>
       </form>
   </div>
 
@@ -182,6 +196,12 @@
     </form>
 </div>
 
-  
+  <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert("Wysłane");
+    })
+  </script>
   </body>
 </html>

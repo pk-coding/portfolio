@@ -1,15 +1,61 @@
 .main-content-aboutme {
   display: flex;
   flex-direction: row;
+<<<<<<< Updated upstream
   justify-content: space-around;
   padding: 50px;
+=======
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+>>>>>>> Stashed changes
   width: 90%;
+  min-height: 80vh;
+  margin: 0 auto;
 }
 
 .content-aboutme {
+<<<<<<< Updated upstream
   justify-content: space-around;
   padding: 50px;
+=======
+>>>>>>> Stashed changes
   flex: 1;
+  padding: 0 40px;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+#about .my-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#about .content-aboutme {
+  flex: 1;
+}
+
+#about h1 {
+  margin-bottom: 20px;
+  color: blueviolet;
+  font-size: 2rem;
+}
+
+#about p {
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 1.1rem;
+  color: #333;
 }
 
 .main-content-portfolio {
@@ -22,9 +68,15 @@
 
 .content-portfolio {
   display: flex;
+<<<<<<< Updated upstream
   flex-direction: row;
   justify-content: space-around;
+=======
+  flex-direction: column;
+  justify-content: space-between;
+>>>>>>> Stashed changes
   align-items: center;
+
 }
 
 .portfolio-item {
@@ -44,6 +96,7 @@
 }
 
 .my-photo {
+<<<<<<< Updated upstream
   flex: 1;
   padding: 10px;
   border-radius: 5%;
@@ -56,6 +109,24 @@ body {
 }
 nav {
   position: sticky;
+=======
+  width: 40%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+>>>>>>> Stashed changes
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -80,6 +151,7 @@ nav ul li {
 }
 nav ul li:hover {
   color: blueviolet;
+  transition: 0.5s;
 }
 
 nav button {
@@ -89,6 +161,12 @@ nav button {
   border-radius: 5px;
   border: 2px solid blueviolet;
   font-size: 1.2rem;
+}
+
+nav button:hover{
+  background-color: blueviolet;
+  color: white;
+  transition: 0.5s;
 }
 
 .landing {
@@ -110,11 +188,20 @@ nav button {
   align-items: center;
 }
 
+<<<<<<< Updated upstream
 .background img {
   margin-right: 50px;
   float: right;
   width: 90%;
   border-radius: 10%;
+=======
+.background img{
+    margin-right: 50px;
+    float: right;
+    width: 90%;
+    border-radius: 10%;
+    box-shadow: 5px 5px 15px rgb(91, 80, 80);
+>>>>>>> Stashed changes
 }
 
 .landing button {
@@ -137,11 +224,21 @@ nav button {
   flex-direction: row;
   justify-content: space-around;
 }
+<<<<<<< Updated upstream
 .card {
   margin: 20px;
   padding: 20px;
   background-color: rgba(236, 255, 253, 1);
   border-radius: 10px;
+=======
+.card{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(236, 255, 253, 1);
+    border-radius: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+>>>>>>> Stashed changes
 }
 
 .animate {
@@ -168,7 +265,7 @@ nav button {
   margin: 10px 0 5px;
 }
 
-input[type="text"],
+.form-container input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
@@ -176,6 +273,12 @@ textarea {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+.form-container input:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
 }
 
 .form-container button {
@@ -190,4 +293,33 @@ textarea {
 
 .form-container button:hover {
   background-color: rgb(85, 2, 162);
+}
+
+
+
+
+@media (width >= 1920px){
+
+}
+
+@media ( 1200 <= width <= 1919px) {
+  
+}
+
+@media ( 992 <= width <= 1199px){
+  
+}
+
+@media ( 768 <= width <= 991px){
+  
+}
+@media ( 481 <= width <= 767px){
+  
+}
+@media ( width <= 480px){
+  .landing{
+    display: block;
+    width:100vw;
+
+  }
 }
