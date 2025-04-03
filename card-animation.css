@@ -1,0 +1,44 @@
+/* Animacja Karty */
+@media (max-width: 991px) {
+
+  .card {
+    opacity: 0; 
+    transform: translateX(-100%); 
+    animation: slideIn 0.5s forwards;
+    position: relative; 
+  }
+
+  .card:nth-child(1) {
+    animation-delay: 0.3s; 
+  }
+
+  .card:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+
+  .card:nth-child(3) {
+    animation-delay: 0.9s; 
+  }
+
+  .anime {
+    opacity: 0; 
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+  }
+  
+  .anime.visible {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+}

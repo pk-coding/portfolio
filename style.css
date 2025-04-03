@@ -142,7 +142,8 @@ nav h2::after {
   content: " beta";
   font-size: 10px;
   height: 15px;
-  width: 25px;
+  padding: 0 2px;
+  width: auto;
   background-color: blueviolet;
   color: white;
   position: absolute;
@@ -351,7 +352,7 @@ textarea {
 
 
 }
-
+/*Menu Hamburger */
 @media (max-width: 991px) {
   nav {
     flex-direction: row;
