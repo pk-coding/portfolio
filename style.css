@@ -100,6 +100,25 @@ nav {
   color: blueviolet;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    
+}
+
+#progress {
+  background-color: blueviolet;
+  height: 3px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform-origin: left center;
+  width: 100%;
+  z-index:9;
+  
+  animation: progress linear;
+  animation-timeline: scroll();
+}
+
+@keyframes progress {
+  from { transform: scaleX(0); }
 }
 
 nav ul {
@@ -119,7 +138,17 @@ nav ul li:hover {
   color: blueviolet;
   transition: 0.5s;
 }
-
+nav h2::after {
+  content: " beta";
+  font-size: 10px;
+  height: 15px;
+  width: 25px;
+  background-color: blueviolet;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 260px;
+}
 nav button {
   background: none;
   height: 50px;
@@ -253,6 +282,18 @@ textarea {
   content: url(https://aurainweb.pl/wp-content/uploads/2013/02/14946_b-e1359786837528.jpg);
 }
 
+@media (max-width: 1500px) {
+  nav h2::after {
+  display: none;
+  content: " ";
+  width: 5px;
+  height: 5px;
+  background-color: blueviolet;
+  position: absolute;
+  top: 20px;
+  left: 260px;
+}}
+
 
 @media (max-width: 991px) {
   .landing {
@@ -261,7 +302,7 @@ textarea {
     height: auto;
     text-align: center;
   }
-
+  
   .landing button {
     width: 50%;
   }
@@ -306,5 +347,53 @@ textarea {
     display: flex;
     flex-direction: column;
 
+  }
+
+
+}
+
+@media (max-width: 991px) {
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex; 
+  }
+
+  .hamburger {
+    display: block; 
+    cursor: pointer;
+    padding: 10px;
+    color: blueviolet;
+    height: 30px;
+    width: 30px;
+  }
+
+  nav h2 {
+    margin: 0;
+    flex: 1; 
+  }
+  nav button{
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .hamburger {
+    display: block;
   }
 }

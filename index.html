@@ -17,6 +17,8 @@
         <li class="nav-item"><a href="#home"></a>Testimonials</a></li>
       </ul>
       <button href="#contact-form">Contact Me</button>
+      <div id="progress" role="progressbar" aria-label="progress"></div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
     </nav>
 
     <div class="landing">
@@ -204,7 +206,12 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       alert("Wysłane");
-    })
+    });
+
+    function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            menu.classList.toggle('show'); 
+        }
   </script>
   </body>
 </html>
